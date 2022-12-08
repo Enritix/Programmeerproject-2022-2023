@@ -1,8 +1,23 @@
 # Programmeerproject-2022-2023
 
-TASK MANAGEMENT
+Task management
 ---------------
 ✔ = Finished |
 📝 = Editing  |
 ✖ = Awaiting |
 ---------------
+[ ✖ ] Klassen maken
+
+[ ✖ ]
+
+[ ✖ ]
+
+[ ✖ ]
+
+[ ✖ ]
+
+[ ✖ ]
+
+[ ✖ ]
+
+[ ✖ ]
