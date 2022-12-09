@@ -8,9 +8,9 @@ Task management
 ---------------
 [ ✔ ] Klassen maken
 
-[ 📝 ] addPiece methode maken in Board
+[ 📝 ] addPiece methode maken in Board --> semi finished, needs improvement
 
-[ ✖ ] isFull methode maken in Board
+[ ✔ ] isFull methode maken in Board
 
 [ ✖ ] hasOXO methode maken in Board
 

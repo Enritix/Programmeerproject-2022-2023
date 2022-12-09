@@ -1,4 +1,4 @@
-package kdg.be.boterkaaseieren;
+package kdg.be.enrico.aaron.boterkaaseieren;
 public class Piece {
     public enum Color {
         RED, BLACK;
