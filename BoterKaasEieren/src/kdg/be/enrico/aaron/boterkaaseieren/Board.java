@@ -28,25 +28,25 @@ public class Board {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for (int i = 1; i < 4; i++) {
+        for (int i = 0; i < 3; i++) {
             sb.append(" ").append(i);
         }
-        for (int i = 0; i < HEIGHT; i++) {
-            sb.append("|");
-            System.out.print("\n-------");
 
-            for (int j = 0; j < WIDTH; j++) {
+        for (int i = 0; i < HEIGHT; i++) {
+            sb.append(" ");
+            System.out.print("\n-------\n");
+            for (int j = 1; j < WIDTH; j++) {
                 if (pieces[i][j] == null) {
                     sb.append(" ").append("|");
 
                 } else {
                     if (pieces[i][j].getColor() == RED) {
                         sb.append("O").append("|");
-                        System.out.print("\n-------");
+                        System.out.print("\n-------\n");
                     }
                     else {
                         sb.append("X").append("|");
-                        System.out.print("\n-------");
+                        System.out.print("\n-------\n");
                     }
                 }
             }
