@@ -12,7 +12,6 @@ public class Board {
         this.piece = new Piece[WIDTH][HEIGHT];
     }
     public void addPiece(Piece piece, int columnNumber, int rowNumber) {
-
     }
 
 }
