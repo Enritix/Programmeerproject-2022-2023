@@ -6,13 +6,13 @@ Task management
 📝 = Editing  |
 ✖ = Awaiting |
 ---------------
-[ ✖ ] Klassen maken
+[ ✔ ] Klassen maken
 
-[ ✖ ]
+[ 📝 ] addPiece methode maken in Board
 
-[ ✖ ]
+[ ✖ ] isFull methode maken in Board
 
-[ ✖ ]
+[ ✖ ] hasOXO methode maken in Board
 
 [ ✖ ]
 
