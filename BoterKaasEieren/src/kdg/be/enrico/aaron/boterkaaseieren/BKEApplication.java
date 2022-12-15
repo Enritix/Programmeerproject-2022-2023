@@ -1,8 +1,7 @@
 package kdg.be.enrico.aaron.boterkaaseieren;
 
-public class Main {
+public class BKEApplication {
     public static void main(String[] args) {
-        Board board = new Board();
-        board.toString(); //to test!
+        Game game = new Game();
     }
 }
