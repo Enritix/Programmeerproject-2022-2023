@@ -14,4 +14,8 @@ public class BoterKaasEieren2P {
         this.player1 = new HumanPlayer(BLACK);
         this.player2 = new HumanPlayer(RED);
     }
+
+    public void playGame() {
+
+    }
 }

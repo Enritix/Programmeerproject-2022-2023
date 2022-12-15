@@ -12,4 +12,8 @@ public class BoterKaasEieren1P1C {
         this.player1 = new HumanPlayer(BLACK);
         this.computerPlayer = new ComputerPlayer(RED);
     }
+
+    public void playGame() {
+
+    }
 }
