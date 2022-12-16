@@ -12,9 +12,9 @@ Task management
 
 [ ✔ ] isFull methode maken in Board
 
-[ ✖ ] hasOXO methode maken in Board
+[ ✖ ] hasOXO methode maken in Board !!
 
-[ ✖ ]
+[ ✖ ] 
 
 [ ✖ ]
 
