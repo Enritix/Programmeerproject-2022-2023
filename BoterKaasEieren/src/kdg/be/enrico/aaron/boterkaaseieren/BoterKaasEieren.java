@@ -10,11 +10,30 @@ public class BoterKaasEieren {
 
     public BoterKaasEieren() {
         this.board = new Board();
+        board.toString();
         this.players = new Player[2];
     }
 
     public void playGame() {
+        Piece.Color winnaar;
+        System.out.println(board.toString());
+        do {
+            players[0].play(board);
+            System.out.println(board.toString());
+            winnaar = board.hasOXO();
 
+            if (winnaar == null) {
+                players[1].play(board);
+                System.out.println(board.toString());
+                winnaar = board.hasOXO();
+            }
+        } while(winnaar == null && !board.isFull());
+        if (board.isFull())
+            System.out.println("Draw!");
+        else if (winnaar == RED)
+            System.out.println("o wins!");
+        else
+            System.out.println("x wins!");
     }
 
     public void TwoPlayers() {

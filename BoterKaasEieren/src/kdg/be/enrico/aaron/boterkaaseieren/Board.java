@@ -56,4 +56,9 @@ public class Board {
         }
         return sb.toString();
     }
+
+    public Piece.Color hasOXO() {
+        //TODO
+        return null;
+    }
 }

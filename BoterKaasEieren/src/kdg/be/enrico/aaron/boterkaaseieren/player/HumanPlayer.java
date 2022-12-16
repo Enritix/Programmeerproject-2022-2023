@@ -18,9 +18,9 @@ public class HumanPlayer implements Player {
     public void play(Board board) {
         boolean gelukt = false;
         do {
-            System.out.println("What row? (x):  ");
+            System.out.print("What row? (x): ");
             int row = sc.nextInt();
-            System.out.print("What column? (y):  ");
+            System.out.print("What column? (y): ");
             int column = sc.nextInt();
             gelukt = board.addPiece(new Piece(this.color), column, row);
         } while (!gelukt);
