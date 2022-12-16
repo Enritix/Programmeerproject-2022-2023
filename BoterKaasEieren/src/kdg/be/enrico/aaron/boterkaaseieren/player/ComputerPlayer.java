@@ -15,7 +15,6 @@ public class ComputerPlayer implements Player{
 
     @Override
     public void play(Board board) {
-        //TODO
         boolean gelukt = false;
         Random r = new Random();
         int row;

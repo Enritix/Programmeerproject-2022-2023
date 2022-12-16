@@ -8,7 +8,7 @@ Task management
 ---------------
 [ ✔ ] Klassen maken
 
-[ 📝 ] addPiece methode maken in Board --> semi finished, needs improvement
+[ ✔ ] addPiece methode maken in Board --> semi finished, needs improvement
 
 [ ✔ ] isFull methode maken in Board
 
