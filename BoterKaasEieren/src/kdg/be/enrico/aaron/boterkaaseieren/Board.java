@@ -11,11 +11,15 @@ public class Board {
         this.pieces = new Piece[BORDER][BORDER];
     }
 
-    public void addPiece(Piece piece, int columnNumber, int rowNumber) {
+    public boolean addPiece(Piece piece, int columnNumber, int rowNumber) {
         if (pieces[columnNumber][rowNumber] == null) {
             pieceCounter++;
             pieces[columnNumber][rowNumber] = piece;
+            return true;
+        } else {
+            return false;
         }
+
     }
 
     public boolean isFull() {
