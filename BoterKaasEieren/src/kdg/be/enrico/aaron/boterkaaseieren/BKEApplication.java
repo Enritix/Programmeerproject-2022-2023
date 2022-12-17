@@ -6,9 +6,6 @@ public class BKEApplication {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         BoterKaasEieren game = new BoterKaasEieren();
-        Board board = new Board();
-        //if button 1v1 is pressed --> game.TwoPlayers() & game.playGame
-        //if button 1vComputer is pressed --> game.OnePlayerOneComputer() & game.playGame
         int keuze;
         do {
             System.out.println("What do you want to do?\n- 1: Play 1v1\n- 2: Play against computer\n- 3: Leaderboard\n- 4: Game rules\n- 5: Exit game");
@@ -30,7 +27,5 @@ public class BKEApplication {
                 System.out.println("This is not a valid choice!");
             }
         } while (keuze != 5);
-        
-
     }
 }
