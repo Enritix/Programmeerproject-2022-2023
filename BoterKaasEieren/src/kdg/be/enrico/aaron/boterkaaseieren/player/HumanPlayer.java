@@ -4,11 +4,13 @@ import kdg.be.enrico.aaron.boterkaaseieren.*;
 import kdg.be.enrico.aaron.boterkaaseieren.Piece.Color;
 
 
-import java.util.Scanner;
+import java.util.*;
 
 public class HumanPlayer implements Player {
     private Color color;
     private Scanner sc = new Scanner(System.in);
+    private Map<String,Score> scores = new TreeMap<>();
+    private String name;
 
     public HumanPlayer(String name, Color color) {
         this.color = color;
