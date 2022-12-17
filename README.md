@@ -12,7 +12,7 @@ Task management
 
 [ ✔ ] isFull methode maken in Board
 
-[ ✖ ] hasOXO methode maken in Board !!
+[ 📝 ] hasOXO methode maken in Board !! --> works, but the Draw method doesn't
 
 [ ✖ ] 
 
