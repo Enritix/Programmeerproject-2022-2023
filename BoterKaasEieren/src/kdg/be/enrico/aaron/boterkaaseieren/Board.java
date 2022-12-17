@@ -88,7 +88,27 @@ public class Board {
 
 
     public Piece.Color hasOXO() {
-        //TODO
+        int[][] richting = {{1, 0}, {1, -1}, {1, 1}, {0, 1}};
+        for (int[] r : richting) { // {1, 0} ↔, {1, -1} ↙ , {1, 1} ↘, {0, 1} ↕
+            int ry = r[0];
+            int rx = r[1];
+
+            for (int x = 0; x < BORDER; x++) {
+                for (int y = 0; y < BORDER; y++) {
+
+                    int lasty = y + 2 * ry;
+                    int lastx = x + 2 * rx;
+                    if (lasty < BORDER && lasty >= 0 && lastx < BORDER && lastx >= 0) {
+                        Piece currentPiece = pieces[y][x];
+                        if (currentPiece != null && (pieces[y + ry][x + rx] != null && currentPiece.getColor() == pieces[y + ry][x + rx].getColor()
+                                && pieces[y + 1 * ry][x + 1 * rx] != null && currentPiece.getColor() == pieces[y + 1 * ry][x + 1 * rx].getColor()
+                                && pieces[y + 2 * ry][x + 2 * rx] != null && currentPiece.getColor() == pieces[y + 2 * ry][x + 2 * rx].getColor())) {
+                            return currentPiece.getColor();
+                        }
+                    }
+                }
+            }
+        }
         return null;
     }
 }
