@@ -1,9 +1,13 @@
 package kdg.be.enrico.aaron.boterkaaseieren;
 
-public class Score {
-    private int score;
+import java.util.concurrent.atomic.AtomicInteger;
 
-    public int getScore() {
-        return score;
+public class Score {
+        private AtomicInteger score;
+        public void Score (int points) {
+            score.getAndAdd (points);
+        }
+        public int getScore () {
+            return score.get();
+        }
     }
-}
