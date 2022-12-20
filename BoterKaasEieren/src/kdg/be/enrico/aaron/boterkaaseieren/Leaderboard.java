@@ -6,12 +6,11 @@ public class Leaderboard {
     private Map<String, Integer> scores;
 
     public Leaderboard() {
-        // Create a TreeMap to store the scores in descending order
         scores = new TreeMap<>(Collections.reverseOrder());
     }
 
-    public void addScore(String player, int score) {
-        scores.put(player, score);
+    public void addScore(String player, int stars) {
+        scores.put(player, stars);
     }
 
     public void printLeaderboard() {

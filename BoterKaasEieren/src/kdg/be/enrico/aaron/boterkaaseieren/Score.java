@@ -19,10 +19,10 @@ public class Score {
             this.stars += 1;
             this.player = player;
         } else if (winnaar == RED) {
-            this.stars += 2;
+            this.stars += 3;
             this.player = player;
         } else if (winnaar == BLACK) {
-            this.stars += 2;
+            this.stars += 3;
             this.player = player;
         } else {
             this.stars += 0;

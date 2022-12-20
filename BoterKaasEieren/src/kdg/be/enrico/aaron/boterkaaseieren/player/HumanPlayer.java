@@ -6,8 +6,6 @@ import kdg.be.enrico.aaron.boterkaaseieren.Piece.Color;
 
 import java.util.*;
 
-import static kdg.be.enrico.aaron.boterkaaseieren.Piece.Color.RED;
-
 public class HumanPlayer implements Player {
     private Color color;
     private Scanner sc = new Scanner(System.in);
@@ -21,21 +19,21 @@ public class HumanPlayer implements Player {
 
     @Override
     public void play(Board board) {
-        boolean gelukt = false;
+        boolean placed = false;
             do {
-                System.out.printf("%s's turn: ", getName());
+                System.out.printf("%n%s's turn: ", getName());
                 System.out.print("\n↪Enter a row number (0, 1 or 2) -> ");
                 int row = sc.nextInt();
                 System.out.print("↪Enter a column number (0, 1 or 2) -> ");
                 int column = sc.nextInt();
-                gelukt = board.addPiece(new Piece(this.color), column, row);
-            } while (!gelukt);
+                placed = board.addPiece(new Piece(this.color), column, row);
+            } while (!placed);
             System.out.println();
 
     }
 
-    public void addScore(String naam, Score score) {
-        this.scores.put(naam,score);
+    public void addStars(String naam, Score stars) {
+        this.scores.put(naam,stars);
     }
 
     public String getName() {
