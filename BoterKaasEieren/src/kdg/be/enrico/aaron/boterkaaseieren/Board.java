@@ -23,7 +23,7 @@ public class Board {
     }
 
     public boolean isFull() {
-        return pieceCounter == BORDER * BORDER;
+        /*return pieceCounter == BORDER * BORDER;*/
         /*for (int i = 0; i < BORDER; i++) {
             for (int j = 0; j < BORDER; j++) {
                 Piece.Color colorRed = RED;
@@ -34,6 +34,14 @@ public class Board {
             }
         }
         return true;*/
+        for (Piece[] piece : pieces) {
+            for (Piece piece1 : piece) {
+                if (piece1 == null) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
    /* public void createBoard() {
