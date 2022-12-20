@@ -13,7 +13,7 @@ public class Board {
 
     public boolean addPiece(Piece piece, int columnNumber, int rowNumber) {
         if (pieces[columnNumber][rowNumber] == null) {
-            pieceCounter++;
+            ++pieceCounter;
             pieces[columnNumber][rowNumber] = piece;
             return true;
         } else {
@@ -24,6 +24,16 @@ public class Board {
 
     public boolean isFull() {
         return pieceCounter == BORDER * BORDER;
+        /*for (int i = 0; i < BORDER; i++) {
+            for (int j = 0; j < BORDER; j++) {
+                Piece.Color colorRed = RED;
+                Piece.Color colorBlack = BLACK;
+                if (!pieces[i][j].equals(colorRed) || !pieces[i][j].equals(colorBlack) ) {
+                    return false;
+                }
+            }
+        }
+        return true;*/
     }
 
    /* public void createBoard() {
