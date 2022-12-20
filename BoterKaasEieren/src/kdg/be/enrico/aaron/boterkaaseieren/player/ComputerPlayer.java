@@ -26,4 +26,9 @@ public class ComputerPlayer implements Player{
         } while (gelukt != true);
         System.out.println("Computer played: (" + row + "," + column + ")");
     }
+
+    @Override
+    public String toString() {
+        return "Computer";
+    }
 }

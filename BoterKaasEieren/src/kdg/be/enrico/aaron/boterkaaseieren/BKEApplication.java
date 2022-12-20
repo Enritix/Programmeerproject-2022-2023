@@ -15,10 +15,11 @@ public class BKEApplication {
             System.out.print("Choice: ");
             keuze = sc.nextInt();
             if (keuze == 1) {
-                System.out.print("Give the name of player 1: ");
+                System.out.print("Player one, give your name: ");
                 String player1 = sc.next();
-                System.out.print("Give the name of player 2: ");
+                System.out.print("Player two, give your name: ");
                 String player2 = sc.next();
+                System.out.printf("%s, you're playing against %s. Good luck to the both of you!\n", player1, player2);
                 System.out.print("Press <ENTER> to continue!");
                 try {
                     System.in.read();
@@ -28,10 +29,15 @@ public class BKEApplication {
                 game.TwoPlayers(player1, player2);
                 game.playGame();
             } else if (keuze == 2) {
-                System.out.print("Give the name of player: ");
-                String player = sc.nextLine();
+                System.out.print("What's your name?: ");
+                String player = sc.next();
+                System.out.printf("%s, you're playing against the computer. Good luck!\n", player);
                 System.out.print("Press <ENTER> to continue!");
-                sc.nextLine();
+                try {
+                    System.in.read();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 game.OnePlayerOneComputer(player);
                 game.playGame();
             } else if (keuze == 3) {

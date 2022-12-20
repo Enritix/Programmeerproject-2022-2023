@@ -9,10 +9,10 @@ import static kdg.be.enrico.aaron.boterkaaseieren.Piece.Color.*;
 public class BoterKaasEieren {
     private Board board;
     private Player[] players;
-    private Scanner sc = new Scanner(System.in);
 
     public BoterKaasEieren() {
         this.board = new Board();
+        /*board.createBoard();*/
         board.toString();
         this.players = new Player[2];
     }
@@ -20,7 +20,6 @@ public class BoterKaasEieren {
     public void playGame() {
         Piece.Color winnaar;
         System.out.println(board.toString());
-        String exit;
             do {
                 players[0].play(board);
                 System.out.println(board.toString());
@@ -36,9 +35,9 @@ public class BoterKaasEieren {
         if (board.isFull())
             System.out.println("Draw!");
         else if (winnaar == RED)
-            System.out.println("O wins!");
+            System.out.println(players[0] + " (O) wins!");
         else
-            System.out.println("X wins!");
+            System.out.println(players[1] + " (X) wins!");
     }
 
     public void TwoPlayers(String player1, String player2) {
