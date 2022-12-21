@@ -35,12 +35,16 @@ public class BoterKaasEieren {
             }
         } while (winnaar == null && !board.isFull());
 
-        if (board.isFull())
+        if (board.isFull()) {
             System.out.println("\nDraw!\n");
-        else if (winnaar == RED)
+            board.clearBoard();
+        } else if (winnaar == RED) {
             System.out.println("\n" + players[0] + " (O) wins!\n");
-        else
+            board.clearBoard();
+        } else {
             System.out.println("\n" + players[1] + " (X) wins!\n");
+            board.clearBoard();
+        }
     }
 
     public void TwoPlayers(String player1, String player2) {

@@ -1,5 +1,7 @@
 package kdg.be.enrico.aaron.boterkaaseieren;
 
+import java.awt.*;
+
 import static kdg.be.enrico.aaron.boterkaaseieren.Piece.Color.*;
 
 public class Board {
@@ -48,12 +50,14 @@ public class Board {
         return true;
     }*/
 
-   /* public void createBoard() {
+    }
+
+    public void clearBoard() {
         for (int i = 0; i < pieces.length; i++) {
             for (int j = 0; j < pieces.length; j++) {
-                this.pieces[i][j] =
+                pieces[i][j] = null;
             }
-        }*/
+        }
     }
 
     @Override

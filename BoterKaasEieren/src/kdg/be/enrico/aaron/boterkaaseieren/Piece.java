@@ -1,8 +1,9 @@
 package kdg.be.enrico.aaron.boterkaaseieren;
 public class Piece {
     public enum Color {
-        RED, BLACK, SPACE;
+        RED, BLACK;
     }
+
     private Color color;
     public Piece(Color color) {
         this.color = color;
@@ -11,4 +12,5 @@ public class Piece {
     public Color getColor() {
         return color;
     }
+
 }
