@@ -9,7 +9,6 @@ public class Board {
 
     public Board() {
         this.pieces = new Piece[BORDER][BORDER];
-        this.pieceCounter = 0;
     }
 
     public boolean addPiece(Piece piece, int columnNumber, int rowNumber) {
@@ -23,7 +22,11 @@ public class Board {
     }
 
     public boolean isFull() {
-        return pieceCounter == BORDER * BORDER;
+        if (pieceCounter == BORDER * BORDER) {
+            return true;
+        } else {
+            return false;
+        }
 
         /*for (int i = 0; i < BORDER; i++) {
             for (int j = 0; j < BORDER; j++) {

@@ -18,30 +18,33 @@ public class BoterKaasEieren {
     }
 
     public void playGame() {
-        Piece.Color winnaar;
+        Piece.Color winnaar = null;
         System.out.println(board.toString());
-            do {
+        do {
+            if (!board.isFull()) {
                 players[0].play(board);
                 System.out.println(board.toString());
                 winnaar = board.hasOXO();
-
-                if (winnaar == null) {
+            }
+            if (winnaar == null) {
+                if (!board.isFull()) {
                     players[1].play(board);
                     System.out.println(board.toString());
                     winnaar = board.hasOXO();
                 }
-            } while (winnaar == null && !board.isFull());
+            }
+        } while (winnaar == null && !board.isFull());
 
         if (board.isFull())
-            System.out.println("Draw!");
+            System.out.println("\nDraw!\n");
         else if (winnaar == RED)
-            System.out.println(players[0] + " (O) wins!");
+            System.out.println("\n" + players[0] + " (O) wins!\n");
         else
-            System.out.println(players[1] + " (X) wins!");
+            System.out.println("\n" + players[1] + " (X) wins!\n");
     }
 
     public void TwoPlayers(String player1, String player2) {
-        players[0] = new HumanPlayer(player1,RED);
+        players[0] = new HumanPlayer(player1, RED);
         players[1] = new HumanPlayer(player2, BLACK);
     }
 

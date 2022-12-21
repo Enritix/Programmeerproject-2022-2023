@@ -9,7 +9,7 @@ public class BKEApplication {
         BoterKaasEieren game = new BoterKaasEieren();
         int choice;
         do {
-            System.out.println("What do you want to do?\n- 1: Play 1v1\n- 2: Play against computer\n- 3: Leaderboard\n- 4: Game rules\n- 5: Exit game");
+            System.out.println("What do you want to do?\n- 1: 【\uD83C\uDFAE】Play 1v1\n- 2: 【\uD83E\uDD16】Play against computer\n- 3: 【\uD83C\uDFC6】Leaderboard\n- 4: 【\uD83D\uDCD6】Game rules\n- 5: 【❌】Exit game");
             System.out.print("Choice: ");
             choice = sc.nextInt();
             if (choice == 1) {

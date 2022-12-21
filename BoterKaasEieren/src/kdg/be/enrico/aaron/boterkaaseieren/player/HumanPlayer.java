@@ -27,6 +27,9 @@ public class HumanPlayer implements Player {
                 System.out.print("↪Enter a column number (0, 1 or 2) -> ");
                 int column = sc.nextInt();
                 placed = board.addPiece(new Piece(this.color), column, row);
+                if (!placed) {
+                    System.out.println("\nThis tile is not empty! Try again...");
+                }
             } while (!placed);
             System.out.println();
 
