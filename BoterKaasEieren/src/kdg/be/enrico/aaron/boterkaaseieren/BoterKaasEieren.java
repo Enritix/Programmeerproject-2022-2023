@@ -56,4 +56,9 @@ public class BoterKaasEieren {
         players[0] = new HumanPlayer(player, RED);
         players[1] = new ComputerPlayer(BLACK);
     }
+    public void clearPlayers() {
+        for (int i = 0; i < players.length; i++) {
+                players[i] = null;
+        }
+    }
 }

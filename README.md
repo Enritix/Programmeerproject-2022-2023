@@ -16,7 +16,7 @@ Task management
 
 [ 📝 ] finish SPACE in Color enum to clear the board (also in Board)
 
-[ ✖ ]
+[ ✖ ] fix clearPlayers method
 
 [ ✖ ]
 
