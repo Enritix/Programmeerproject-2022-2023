@@ -6,13 +6,13 @@ import java.util.Scanner;
 public class BKEApplication {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        BoterKaasEieren game = new BoterKaasEieren();
         int choice;
         do {
             System.out.println("What do you want to do?\n- 1: 【\uD83C\uDFAE】Play 1v1\n- 2: 【\uD83E\uDD16】Play against computer\n- 3: 【\uD83C\uDFC6】Leaderboard\n- 4: 【\uD83D\uDCD6】Game rules\n- 5: 【❌】Exit game");
             System.out.print("Choice: ");
             choice = sc.nextInt();
             if (choice == 1) {
+                BoterKaasEieren game = new BoterKaasEieren();
                 System.out.print("Player one, give your name: ");
                 String player1 = sc.next();
                 System.out.print("Player two, give your name: ");
@@ -25,9 +25,11 @@ public class BKEApplication {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+                game.clearPlayers();
                 game.TwoPlayers(player1, player2);
                 game.playGame();
             } else if (choice == 2) {
+                BoterKaasEieren game = new BoterKaasEieren();
                 System.out.print("What's your name?: ");
                 String player = sc.next();
                 System.out.printf("%s, you're playing against the computer. Good luck!\n", player);
@@ -38,6 +40,7 @@ public class BKEApplication {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+                game.clearPlayers();
                 game.OnePlayerOneComputer(player);
                 game.playGame();
             } else if (choice == 3) {

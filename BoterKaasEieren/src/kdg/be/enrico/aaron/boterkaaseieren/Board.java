@@ -11,6 +11,7 @@ public class Board {
 
     public Board() {
         this.pieces = new Piece[BORDER][BORDER];
+        this.pieceCounter = 0;
     }
 
     public boolean addPiece(Piece piece, int columnNumber, int rowNumber) {

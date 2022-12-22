@@ -14,8 +14,6 @@ Task management
 
 [ ✔ ] hasOXO methode maken in Board !! --> ~~works, but the Draw method doesn't~~
 
-[ 📝 ] finish SPACE in Color enum to clear the board (also in Board)
-
 [ ✖ ] fix clearPlayers method
 
 [ ✖ ]
