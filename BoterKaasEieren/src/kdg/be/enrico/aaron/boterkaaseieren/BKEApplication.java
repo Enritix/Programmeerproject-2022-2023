@@ -9,7 +9,7 @@ public class BKEApplication {
         BoterKaasEieren game;
         int choice;
         do {
-            System.out.println("What do you want to do?\n- 1: 【\uD83C\uDFAE】Play 1v1\n- 2: 【\uD83E\uDD16】Play against computer\n- 3: 【\uD83C\uDFC6】Leaderboard\n- 4: 【\uD83D\uDCD6】Game rules\n- 5: 【❌】Exit game");
+            System.out.println("What do you want to do?\n- 1: 【\uD83C\uDFAE】Play 1v1\n- 2: 【\uD83E\uDD16】Play against computer\n- 3: 【\uD83C\uDFC6】Leaderboard\n- 4: 【\uD83D\uDCBE】Played games\n- 5: 【\uD83D\uDCD6】Game rules\n- 6: 【❌】Exit game");
             System.out.print("Choice: ");
             choice = sc.nextInt();
             switch (choice) {
@@ -51,15 +51,17 @@ public class BKEApplication {
                     Leaderboard.printLeaderboard();
                     break;
                 case 4:
+                    break;
+                case 5:
                     GameRules rules = new GameRules();
                     rules.printGameRules();
                     break;
-                case 5:
+                case 6:
                     break;
                 default:
                     System.out.println("This is not a valid choice!\n");
                     break;
             }
-        } while (choice != 5);
+        } while (choice != 6);
     }
 }
