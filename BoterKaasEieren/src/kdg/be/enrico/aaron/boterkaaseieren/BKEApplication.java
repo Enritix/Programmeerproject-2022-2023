@@ -15,9 +15,9 @@ public class BKEApplication {
             switch (choice) {
                 case 1:
                     game = new BoterKaasEieren();
-                    System.out.print("Player one, give your name: ");
+                    System.out.print("Player one (O), give your name: ");
                     String player1 = sc.next();
-                    System.out.print("Player two, give your name: ");
+                    System.out.print("Player two (X), give your name: ");
                     String player2 = sc.next();
                     System.out.printf("%s, you're playing against %s. Good luck to the both of you!\n", player1, player2);
                     System.out.print("Press <ENTER> to continue!");
@@ -48,10 +48,7 @@ public class BKEApplication {
                     game.playGame();
                     break;
                 case 3:
-                    System.out.println("Give your name: ");
-                /*String player = sc.nextLine();
-                HumanPlayer scores = new HumanPlayer(player);
-                score.getScore();*/
+                    Leaderboard.printLeaderboard();
                     break;
                 case 4:
                     GameRules rules = new GameRules();

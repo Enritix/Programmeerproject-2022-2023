@@ -22,9 +22,9 @@ public class HumanPlayer implements Player {
         boolean placed = false;
             do {
                 System.out.printf("%n%s's turn: ", getName());
-                System.out.print("\n↪Enter a row number (0, 1 or 2) -> ");
+                System.out.print("\n↪Enter a column number (0, 1 or 2) -> ");
                 int row = sc.nextInt();
-                System.out.print("↪Enter a column number (0, 1 or 2) -> ");
+                System.out.print("↪Enter a row number (0, 1 or 2) -> ");
                 int column = sc.nextInt();
                 placed = board.addPiece(new Piece(this.color), column, row);
                 if (!placed) {
@@ -39,6 +39,7 @@ public class HumanPlayer implements Player {
         this.scores.put(naam,stars);
     }
 
+    @Override
     public String getName() {
         return name;
     }

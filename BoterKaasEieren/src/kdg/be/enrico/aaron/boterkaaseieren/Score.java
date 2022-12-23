@@ -12,24 +12,30 @@ public class Score {
     private BoterKaasEieren bke;
     private Board board;
 
-    public Score(Player player) {
+    public Score(Player player, Board board) {
         Piece.Color winnaar;
         winnaar = board.hasOXO();
+        this.board = board;
         if (board.isFull()) {
-            this.stars += 1;
+            this.stars = 1;
             this.player = player;
         } else if (winnaar == RED) {
-            this.stars += 3;
+            this.stars = 3;
             this.player = player;
         } else if (winnaar == BLACK) {
-            this.stars += 3;
+            this.stars = 3;
             this.player = player;
         } else {
-            this.stars += 0;
+            this.stars = 0;
             this.player = player;
         }
+        Leaderboard.addScore(player.getName(),this);
     }
     public int getStars() {
         return this.stars;
+    }
+
+    public void setStars(int stars) {
+        this.stars = stars;
     }
 }

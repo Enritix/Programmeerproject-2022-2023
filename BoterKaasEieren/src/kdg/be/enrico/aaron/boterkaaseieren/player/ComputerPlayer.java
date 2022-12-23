@@ -24,7 +24,12 @@ public class ComputerPlayer implements Player{
              column = r.nextInt(3);
             gelukt = board.addPiece(new Piece(this.color), column, row);
         } while (gelukt != true);
-        System.out.println("\nComputer played: (" + row + "," + column + ")\n");
+        System.out.println("\nComputer played: (" + column + "," + row + ")\n");
+    }
+
+    @Override
+    public String getName() {
+        return null;
     }
 
     @Override
