@@ -38,4 +38,9 @@ public class Score {
     public void setStars(int stars) {
         this.stars = stars;
     }
+
+    @Override
+    public String toString() {
+        return getStars() + "";
+    }
 }
