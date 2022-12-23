@@ -16,6 +16,6 @@ Task management
 
 [ ✖ ] fix clearPlayers method
 
-[ ✖ ]
+[ ✖ ] PlayedGames fixen
 
 [ ✖ ]

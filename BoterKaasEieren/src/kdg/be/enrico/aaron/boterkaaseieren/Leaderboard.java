@@ -16,7 +16,7 @@ public class Leaderboard {
 
     public static void printLeaderboard() {
         for (Map.Entry<String, Score> entry : scores.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
+            System.out.println(entry.getKey() + ": ⭐" + entry.getValue());
         }
     }
 }

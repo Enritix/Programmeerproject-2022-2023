@@ -30,6 +30,7 @@ public class BKEApplication {
                     game.clearPlayers();
                     game.TwoPlayers(player1, player2);
                     game.playGame();
+                    PlayedGames.addGame(game);
                     break;
                 case 2:
                     game = new BoterKaasEieren();
@@ -46,11 +47,13 @@ public class BKEApplication {
                     game.clearPlayers();
                     game.OnePlayerOneComputer(player);
                     game.playGame();
+                    PlayedGames.addGame(game);
                     break;
                 case 3:
                     Leaderboard.printLeaderboard();
                     break;
                 case 4:
+                    PlayedGames.getGames();
                     break;
                 case 5:
                     GameRules rules = new GameRules();
