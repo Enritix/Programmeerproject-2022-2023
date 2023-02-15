@@ -19,10 +19,7 @@ public class Score {
         if (board.isFull()) {
             this.stars = 1;
             this.player = player;
-        } else if (winnaar == RED) {
-            this.stars = 3;
-            this.player = player;
-        } else if (winnaar == BLACK) {
+        } else if (winnaar == RED || winnaar == BLACK) {
             this.stars = 3;
             this.player = player;
         } else {

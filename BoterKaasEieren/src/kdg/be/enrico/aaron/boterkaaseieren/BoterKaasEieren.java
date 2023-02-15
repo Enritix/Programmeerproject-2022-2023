@@ -41,14 +41,24 @@ public class BoterKaasEieren {
             board.clearBoard();
             Score draw = new Score(players[0], board);
             Score draw2 = new Score(players[1], board);
+
+            System.out.println(draw.getStars());
+            System.out.println(draw2.getStars());
+
         } else if (winnaar == RED) {
             System.out.println("\n" + players[0] + " (O) wins!\n");
             board.clearBoard();
             Score winnaarO = new Score(players[0], board);
+
+            System.out.println(winnaarO.getStars());
+
         } else {
             System.out.println("\n" + players[1] + " (X) wins!\n");
             board.clearBoard();
             Score winnaarX = new Score(players[1], board);
+
+            System.out.println(winnaarX.getStars());
+
         }
     }
 
